@@ -1,0 +1,156 @@
+Today's Agenda:
+Core Java Introduction
+Class,Object,Method
+Primitive Data Types, Operators
+Method signature(Access specifier,input,return)
+Why automation
+what is the meaning of automation
+how we are going to automate
+
+Java Selenium
+---------------
+Java programming language
+Job oppertunity
+Java compatibility
+Java is object oriented
+Java is platform independent
+Java has library
+
+human understand language
+Tamil,english.....
+computer----0 1 0 1 
+
+0's 1's
+00001 
+A ----65  a----97
+000100010
+
+Java jdk 1.8-Java development kit
+JRE-Java RunTime Environment
+
+JVM-Java virtuval machine
+
+Eclipse
+How to create a  java project
+--------------
+File----new ----project
+new window
+java---java project---next
+new window
+Enter the project name(LearnJava) and give finish
+How to create a  Maven project
+--------------
+File----new ----project
+new window
+Maven---Maven project---next
+new window
+check the checkbox Create a simple project  click next
+Group Id ---Lowercase(organization)
+ArtifactID----project name(Start with upper case)
+version-0.0.1
+finish
+
+Create package
+--------------
+
+Right click of your src/main/java---new---package
+new window type the name of your package--lowercase
+ex:week1.day1  
+ finish
+ organization of your code
+ Class
+ ------
+ place to write the code
+ user defined blueprint
+ How to create a class
+ Right click of your package---new---class
+ open window
+ Enter class name ex:Car(uppercase)
+ finish
+ inside class
+syntax
+--------
+//Access modifier  keyword classname
+public class ClassName{
+
+
+}
+Action/verification----method
+block of code
+Lowercasefollowing uppercase
+ex: driveCar
+syntax
+-------
+//Access modifier return type methodName
+public void driveCar(){
+
+}
+ClassRoom1:
+1.Create class MyFirstCode
+2.use shortcut to  create main method(type main (ctrl+space+enter))
+3.use shortcut to print a simple syso("print your name")
+
+
+
+
+Method signature
+--------------------
+1.access modifier---permission
+   a.public----Anyone can access(public transport)
+   b.private---Members of my class(with in same class)
+   c.protected---only can be access from same package(week3)
+   d.default----only can be access from same package
+2.return type----void
+3.methodName
+--->it should be meaningful
+--->Lowercase following uppercase
+ex:driverCar();
+4.Input argument
+
+
+data/informtion(variable)
+color---white
+NumWheels---4
+brand--zen
+isPuncture--yes/no
+fuelType-P/D
+SeatCapacity-6
+variable:
+syntax
+------
+datatype variable(data)=assign value;
+boolean isPuncture=true;
+
+DataType
+---------
+types
+primitive datatype
+boolean true/false
+store the whole number(both positive and negative)
+------------------------
+byte----small size 8bit-- 1 2 3 4 
+short ---store 16 bit---upto 5 digit
+int---32 bit ---upto 9 digit
+long--64 bit more then 10 digit can store L
+
+Store the decimal value
+-----------------------
+float---upto 5 digit 32 bit f F
+double---upto more  than 5 64 bit d
+
+Single Character
+----------------
+char 
+with in single quote
+
+
+Non-primitive datatype
+String 
+sequence of character with in double quote
+"TestLeaf"
+
+Object
+-------
+syntax
+--------
+ClassName objectname=new classname();
