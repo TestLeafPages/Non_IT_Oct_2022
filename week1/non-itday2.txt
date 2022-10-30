@@ -1,0 +1,83 @@
+Operators:
+Arithmetic operator=+,-,*,/,%
+a+b
+Comparison < > == <= >=
+Assignment operator = a=5;
+Increment/decrement  ++,--
+Logical operator
+And Or Not
+And &&       1 * 0  0  0*1  0  1*1 1
+             T   F  F  F*T  F  T*T T 
+
+OR ||addition   T+F T 1+0 1  0+1 F+T T 1+1 1
+
+Not ! T     1   0  F  T
+
+Looping statement:
+for 
+while
+do while
+ Repeat the action 
+ syntax
+ -------
+ for--keyword
+ for(initialization;condition;increment/decrement){
+ //block body of the statement
+ }
+ 
+ Class Room:
+ create a new package week1.day2
+ Create a class
+ create main method
+ using for loop to print your name 5 times
+ 1.Goal this program to understand the looping
+ Factorial
+ 1.Num 5
+ 2.5*4*3*2*1=120
+ input int n=5;
+ output=120
+
+while(condition)
+No initialization no increment/decrement
+
+Coditional Statement:
+---------------------
+if(){
+
+}
+  
+  
+  if(){
+  
+  }
+else{
+}
+
+if(){
+}
+elseIf(){
+}
+
+
+ClassRoom2:
+Create inside week1.day2 package
+step1 Create a class OddOrEven
+step2 declare the variable with int i=41;
+step3 if the rem-->1 (odd)
+else print even
+
+
+
+Arrays:
+Multiple set of data
+n number of data
+find intersection
+
+a={1,2,3,4,5}
+b={2,4,5,6}
+i=2 4 5
+int [] num={10,20,30,40,50};
+To get the  length of array
+arrayname.length
+To sort the Arrays
+Arrays.sort(arrayname);
