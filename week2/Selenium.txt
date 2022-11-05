@@ -1,0 +1,49 @@
+What is selenium?
+Open source tool to automate the web application
+Structured framework
+Automation:
+Time and efficient
+yes all browser
+support all os
+write any language
+
+microsoft office package
+excel---Testdata----external source??
+2004-selenium in
+2006-webdriver based on webapplication
+selenium webdriver2009-v3-w3cStandared protocal
+What selenium webdriver can do?
+It support all browser
+It support all os
+It can run in different language-java,js,python,ruby...
+Manual Testing:
+We do repetitive action
+Time Consuming
+Complex to perform some calculation
+What we can do?
+can automate excel sheet??No window based(library file -java Apache poi)
+can automate mainframe application??no desktop(java library-winapp driver)
+can it talk to data base??no(java library jdbc)
+can it automate mobile app??no(Appium)
+can it do perfprmance testing??no(jmeter/load runner)
+can it do API testing??no(seleniumnv4 developer tool CDT partially)
+Automation tools:
+selenium-open source-free
+uft-unified function testing
+puppeteer-google
+cypress
+playwright
+
+Maven ---build in tool
+many library in it()
+pom.xml
+mvn repository
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.3.0</version>
+</dependency>
+set the path
+System.setProperty("webdriver.chrome.driver","/path/to/chromedriver")
+
+Jason-v1
