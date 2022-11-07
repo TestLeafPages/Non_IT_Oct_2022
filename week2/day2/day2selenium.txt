@@ -1,0 +1,119 @@
+Select class
+--------------------
+Select its a class
+<select>
+   <option>value=blue()>visibletext</option>
+Three method:
+1.select by index(0)
+2.select by value("")
+3.select by visibletext("")
+
+findElement returns----WebElement
+
+ClassRoom1:
+Create package week2.day2
+create class HandleDropDown
+Setup the path
+Launch the browser
+load the url(https://leafground.com/select.xhtml)
+maximize the browser
+Add wait
+Which is your favorite UI Automation tool?
+handle the drop down
+
+xpath:
+xml path language
+Absolute xpath:
+/
+/html/body/div[2]/div/div/form
+tag fail
+developer change the dom
+classRoom 2:
+----------
+1.open the url https://www.facebook.com/
+write xpath for select gender
+
+2.open the url https://leafground.com/select.xhtml
+choose the course
+3.open the url https://www.aadhithyacars
+write xpath for name field
+
+Relative xpath:
+----------------
+Locate the element easily
+//tagname--immediate tag
+Attribute based xpath(exact match)
+----------------------
+id name class
+syntax:
+-------
+//tagname[@attribute='value']
+example:
+//form[@id='login']
+partial match: attribute
+----------------
+keyword-contains
+syntax
+------
+//tagname[contains(@attribute,'value')]
+//label[contains(@class,'ui-selectonemenu')]
+2.Text based
+-------------
+black 
+syntax:
+//tagname[text()='value']
+example:
+//label[text()='Username']
+partial based:text
+-----------------------
+syntax:
+--------
+//tagame[contains(text(),'value')]
+//a[contains(text(),'SFA')]
+
+
+
+Collection based:
+index
+(any xpath)[index start from 1]
+(//option[@class='ui-selectonemenu-label'])[4]
+
+
+Axes based--advanced xpath
+Relation based xpath
+Immediate relation
+Parent to child
+parent xpath/child tagname
+(//div[contains(@class,'x-grid3-cell')]/a)[1]
+child to parent
+child xpath/parent::parent tagname
+child xpath/..
+//p[@class='top']/..
+//p[@class='top']/parent::form
+Grandparent to grandchild
+Grandparent xpath//grandchild tagname
+//form[@id='login']//label
+Grandchild to grandparent
+Grandchild xpath//ancestor::grandparent tagname
+//input[@id='username']//ancestor::form
+//input[@id='username']/../..
+
+distance relation
+-----------------------
+siblings
+Elder to younger
+Elder sibling xpath/following-sibling::younger sibling tagname
+//label[text()='Username']/following-sibling::input
+younger to elder
+younger sibling xpath/preceding-sibling::elder tagname
+//input[@id='username']/preceding-sibling::label
+
+
+cousin
+---------
+Elder cousin to younger cousin
+Elder cousin xpath/following::younger tagname
+
+younger cousin to elder cousin
+younger cousin xpath/preceding::elder cousin
+//input[@id='password']/preceding::label[text()='Username']
