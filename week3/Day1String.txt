@@ -1,0 +1,73 @@
+String:
+sequence of character or group of character eg:"Testleaf"
+char 'T''e''s'
+Array
+String -class
+variable into string
+//class  //variable//assign=
+String name="Testleaf";<---literal
+String name1="Testleaf";
+String is immutable nature
+
+Non literal
+String str=new String("Hello");
+
+String str1=new String("Testleaf")
+
+To compare the string reference have to use ==
+
+ClassRoom :
+Time to given: 10 - 15 minutes.
+________
+
+Classroom Assignment 1 A: Reverse the Name
+
+Goal: To understand the String, loop
+
+a) Create a class by name: ReverseString (with main method) in same package(week3.day1)
+b) Write a logic to reverse a String
+c) Run and Confirm the reversed String is printed in console
+
+Hint: Convert the String to characters, get the characters in reverse order and 
+print every character without white space.
+
+Time to given: 10 - 15 minutes.
+________
+
+
+Classroom Assignment 2: Find the count of given character in a String
+
+Goal: To understand the String, loop, if 
+
+a) Create a class by name: FindCharCount (with main method) in same package
+b) Write a logic to find the number of occurances of a given character
+c) Run and Confirm the correct character count is printed in console
+
+Hint: Convert the String to character array, loop and compare with the input character
+if matches, keep adding the count. Finally, print the count.
+
+Time to given: 10 - 15 minutes.
+________
+
+OOPs:
+Object oriented programming language
+1.flexibility
+2.maintain 
+3.reuse
+Class-blue print methods data variable
+object-instance of class
+Inheritance
+Polymorphism
+Abstraction
+Encapsulation
+Inheritance:
+inherit the property (variable/method) from one class to another
+1.Reusabilityof code
+2.memory management
+keyword-extends
+Base/super/parent class
+derived/subclass/child class
+types:
+single inheritance
+Multilevel inheritance
+Multiple inheritance-Not support in java but we can achieve by interface

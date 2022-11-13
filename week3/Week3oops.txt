@@ -1,0 +1,61 @@
+2.Abstraction:
+To show the necessary things to the user and hide the details.
+keyword-Abstract   public abstract class classname
+variable methods crate obj
+Interface
+interface extends interface
+class to interface implement
+ClassRoom:
+Abstract class-Language(two method java(Im),python(Um))
+interface-one interface(Automation tool)( two methods(Um)-selenium,playwright )
+Concrete class-Testing call and implement the un implemented method
+Collection:
+
+Collection is an interface
+ 
+ single dimension array[]
+
+dynamic in size-grow and shrink
+Types
+------
+1.List
+2.Set
+3.Map[][]
+
+Collections----Class
+
+Arrays fixed set of data
+int[]num=new int[5000];???
+we cannot change the size of array
+
+List:
+--->dynamic in size
+--->List is also interface
+--->Insertion order 1.a 2.b 3.c 4.d
+--->List allow duplicate
+--->Implementation class
+
+1.ArrayList-worked based on index 0,1,2....
+
+2.LinkedList-Node based algorithm s1 s2 s3 s4
+syntaxt:       //userdefined
+List <WrapperClass>listname=new ArrayList<WrapperClass>();
+<WrapperClass>-Generic
+int   Integer-class
+Set:
+----
+Its a interface
+Implementation class
+1.HashSet  ---No order/fast result/random order/Hashing algorithm
+2.LinkedHashSet--Based on insertion order
+3.TreeSet---get  order result/alphabet order/ASCII algorithm
+Set not allow duplicate
+Set not support get method?
+because of implementation class(index change)
+for each
+syntax:
+-------
+forEach(datatype variablename : input)
+syntaxt
+-------
+Set<wrapperclass>setname=new Implementation class<WrapperClass>();
