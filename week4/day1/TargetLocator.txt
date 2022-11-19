@@ -1,0 +1,104 @@
+Target Locators:
+----------------
+1.Alert
+Alert is a message /notification box
+Types:
+Modal dialog
+-simple Alert-only one option(infromation)
+-Confirm Alert (2 option)-confirmation
+-prompt Alert-(textbox + 2 option)-enter text+confirmation 
+
+-Not inspectable(it is javascript)
+
+Non-modal dialog
+Sweet Alert
+inspectable ---->findElement --->click-->take snapshot
+
+Exception:
+UnhandledAlertException-if you try interacting with dom element without closing Alert.
+NoAlertPresentException-if your interacting with an alert through code but alert did not appear.
+
+Limitation:
+you cannot take snapshot of alert.
+
+Methods:
+-accept-(positive action)-Ok
+
+-dismiss-(negative action)-cancel
+
+-sendKeys(Type value on the prompt textbox)-always clear before type
+
+-getText(Read the infromation)
+
+driver.switchTo().alert();
+class Room 1:
+Handle the Alert:
+Load the url:https://leafground.com/alert.xhtml
+1.Simple Alert
+2.Prompt Alert
+3.SweetAlert(confirm)
+
+
+2.Frame
+<iframe> tag
+Html element that helps developers organize the set of element
+nested frame
+
+    <iframe>
+	  <iframe>
+	  
+	  Exception:
+	  -NosuchFrameException
+	  
+	  NoSuchElement-- Either locator is wrong
+	               --the element may be living present inside the frame
+overloading-method name same arg is different
+Methods:
+frame(int index)--index start from 0
+frame(String name/id)
+frame(WebElement ele)
+came outside of frame
+switchTo defaultcontent
+go to my parent frame
+driver.switchTo().parentFrame();
+3.windowHandle
+window or tab is technically same
+url
+title
+
+challenges
+-window url title sequence number
+-same window multiple time open??? how to find the unique window
+Selenium:
+Every new window...>tag it...>new windowHandle...>String(unique)
+CDwindow-81133EDAABAEE184232DB3BBF22DB412
+CDwindow-93593165B8B223763FCFD2F3E925C210
+
+
+
+Exception
+NoSuchWindowException
+
+close the windowHandle
+current window-driver.close();
+close all the window
+driver.quit();
+
+How to switch the control to new window
+getwindowHandles()
+convert set to list
+pick the particular window using get(index)
+switch to the window using handle
+close or quit
+Set<String> windowHandles = driver.getWindowHandles();
+List<String>lstwindow =new ArrayList<String>(windowHandles);
+driver.switchTo().window(lstwindow.get(1));
+
+4.snapshot
+//How to take snap shot
+        //step1: take a snap 
+         File source = driver.getScreenshotAs(OutputType.FILE);//ctrl+2+l
+        //step2:to save the file local dir
+         File dest =new File("./snap/frame.png");
+         //step 3 join both source dest
+         FileUtils.copyFile(source, dest);
