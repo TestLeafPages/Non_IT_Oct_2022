@@ -1,0 +1,99 @@
+WebTable:
+<table>
+Static -Data Static-Number of rows and columns fixed
+
+dynamic-Data Dynamic-Number of rows and columns Not fixed
+<table>
+ <tr>
+ <th>FirstName</th>
+<th>LastName</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>jill</td>
+<td>ann</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td>ann</td>
+<td>34</td>
+</tr>
+</table>
+
+ClassRoom:
+Steps:
+1. Navigate to https://erail.in/
+2. Clear(.clear) the text in source and enter (sendkeys("ms",keys.tab))"ms" and tab
+3. Clear the text in destination and enter "mdu" and tab
+4. Uncheck sort on date(use .click)
+5. Get all  the train names and verify whether any duplicate train name is there or not
+tips:
+Table Class Name :DataTable TrainList TrainListHeader stickyTrainListHeader
+
+ClassRoom2:
+Load the url:https://www.snapdeal.com/
+Mousehover on Men's Fashion
+verify the page is loaded
+
+
+
+
+Actions Class
+----------------
+click()
+sendKeys()
+getText()
+getAttribute()
+clear()
+
+Advanced user Interaction
+-------------------------
+MouseHover
+doubleclick
+RightClick
+dragAndDrop
+clickAndHold
+
+--->Action class is not throw any exception
+
+1.MouseHover
+-------------
+Actions builder=new Actions(driver);
+builder.moveToElement(webElement).perform();
+
+2.Droppable
+Actions builder=new Actions(driver);
+builder.dragAndDrop(source,destination).perform();
+
+3.Draggable
+Actions builder=new Actions(driver);
+builder.dragAndDropBy(webElement,x,y).perform();
+Drag and DropBy
+4.RightClick
+Actions builder=new Actions(driver);
+builder.contextclick(webElement).perform();
+
+5.DoubleClick
+Actions builder=new Actions(driver);
+builder.doubleclick(webElement).perform();
+6.ScrollDown
+Actions builder=new Actions(driver);
+builder.scrollToElement(webElement).perform();
+7.Select
+--------
+Actions builder=new Actions(driver);
+builder.clickAndHold(webElement).clickAndHold(webElement).release().perform();
+
+8.sort the element:
+Actions builder=new Actions(driver);
+builder.dragAndDrop(item6,item1).dragAndDrop(item2,item 3).perform
+builder.dragAndDropBy(webElement,x,y).perform();
+
+9.keys action:
+builder.keyDown(Keys.CONTROL).click(webElement).click(webElement).click(webElement).keyUp(Keys.CONTROL).perform();
+
+Handle the browser notification
+ChromeOptions ch = new ChromeOptions();
+ch.addArguments("--disable-notifications");
+ChromeDriver driver=new ChromeDriver(ch);
