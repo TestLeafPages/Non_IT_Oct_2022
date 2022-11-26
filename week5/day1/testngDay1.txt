@@ -1,0 +1,84 @@
+TestNg:
+--------
+TestNG ia an automation testing framework.NG-Nextgeneration.
+JUnit-java
+TestNG-Open source framework
+1.Has a feature to perform sequential test execution one by one
+2.Has a feature to perform parallel test execution-3 three browser
+3.Gives test execution status(pass/fail)
+4.Gives test execution summary report(html report)-index.html
+5.support data driven to execute test with multiple set data @Dataprovider
+6.support cross browser testing
+7.Control test execution by annotation and attribute
+8.Assertion to perform validation and verification
+9.Automatic retry of failed test case-Network
+plugin
+-------
+software
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>
+    
+</dependency>
+
+
+Classroom:1
+========
+https://github.com/TestLeafPages/SelAug2021/blob/main/testcase.zip
+2. Download testcase.zip
+3. Extract the zip file
+4. copy the testcase folder
+5. paste it under scr/main/java
+Steps to convert standalone testcase into TestNG testcase
+----------------------------------------------------------
+1. Remove static keyword from main method
+2. Remove String[] args argument
+3. Rename main() into meaningful method name
+4. Apply @Test on top of the method
+===========================================================
+How to run multiple testcase through TestNg?
+1.Select the testcase that you like to run together
+2.Convert them as testng---->Convert TestNg
+3.This will generate the testng xml file
+4.click the xml file and open the source tab
+ClassRoom 2:
+sequential
+Convert a xml that can run sequential
+Attribute
+verbose
+log print inside the console
+default value of verbose-2
+max-0---10
+5
+Thread count-5
+Annotation:
+Hierarch:
+
+@BeforeSuit-Report initialization
+
+  @BeforeTest-Data connection 5@test(db,excel)
+    
+	 @BeforeClass-add the information of testcase  to report(author,test,category)
+	 
+	   @BeforeMethod-Launching the  browser
+	      
+		  @Test(Mandatory)
+	   
+	   @AfterMethod-close the browser
+	 
+	 @AfterClass-close
+	 
+  @AfterTest-close the db connection
+
+@AfterSuit-close the report
+
+
+example:
+@beforeMethod
+Test-create
+@AfterMethod-close
+@beforeMethod
+test-edit
+@afterMethod
