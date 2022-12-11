@@ -1,0 +1,102 @@
+Polymorphism:
+Poly -many      morphism-forms
+mobile-call
+      -TextMsg
+	  -video
+Type:
+Overloading-static polymorphism/compile-time polymorphism
+same method name/different arg /diff data type
+frame(int index)
+frame(String id/name)
+frame(Webelement)
+java
+-----
+substring(start index)
+substring(start,stop index)
+
+Dynamic polymorphism/Run-time polymorphism
+Overloading
+
+overriding-same method name,same arg,same data type but different
+ class
+ green  white triangle 
+ 
+ 
+ Constructor
+ ------------
+ ->Initialize the obj
+ ->like a method
+ ->same name as class name
+ ->automatically invoked when object create.
+ new keyword
+ ->no it wont return any value
+ chain the constructor- this keyword,super keyword
+ Car obj=new Car();
+ accessmodifier return type methodname()
+ 
+ public class Car{
+ 
+ public Car(){
+ }
+ Two types:
+ Default constructor
+ No arg
+ int  0 float 0.0 boolean false string null -depends on the data type use
+ paremeter constructor
+ 
+ Execution:
+ 1.Static block
+ 2.main method
+ 3.object
+ 4.constructor
+ 5.method
+ 
+ JavaKeyword
+ -----------
+ this 
+ 1.Refers current class obj/reference
+ 2.Refers current class method
+ 3.Refers current class variable
+ 4.Used in constructor chaining
+ 5.this as a argument in method call
+ 6. this as a argument in the constructor call
+ 
+ static
+ keyword 
+ 1.static variable
+ 2.static method
+ 3.static block
+ 4.static class
+ Final keyword:
+ apply the restrictions
+ 1.class
+ 2.method
+ 3.variable
+ 
+ Super
+ access the variable of the parent class
+ invoke the constructor of the parent class
+ access method of the parent class
+ 
+ 
+ 
+ Wait
+ 1.Implicitly wait
+ driver.manage.timeout.implicitlyWait(Duaration.of sec(30));
+ //how many time you write 1
+ //which method affect findElement and findElements
+ //if time out exception NoSuchElement/empty[]null
+ 
+ Explicit  Wait:
+ wait for element behaviour or target Loactor
+ //create obj for webdriverwait
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		//wait till the element 
+		wait.until(ExpectedConditions.invisibilityOfElementLocated())
+ Thread.sleep
+ sometime immediately
+ sometime it will take longer
+ Thread.sleep(3000)
+ super class-fluent wait
+ WebDriver wait(subclass)
+ polling interval 500ms
