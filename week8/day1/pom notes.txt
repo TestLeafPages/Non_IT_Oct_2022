@@ -1,0 +1,70 @@
+POM-Page object Model
+---------------------
+--Design pattern(Best Practice) for the UI automation framework.
+--Similar technique like now UI developer designed their screens.
+Setup for sequential execution
+Setup for Parallel execution
+This-keyword
+Framework:
+-----------
+Its a real or conceptual Structure intended to guide or support the building of a product.
+why Framework?
+-To produce uniform output/result
+-To increse the productivity
+-Anyone can able to produce the same result
+-Easy maintenance of script
+-To reduce the duplicate code
+-support better report
+-Maintain the uniformity
+-Support multi-lingual application
+What is  POM:
+Design pattern to build a automation framework.
+
+Dependency:
+------------
+1.Selenium WebDriver
+2.WebDriver manager
+3.TestNg
+4.Apache POI
+5.Extend Report
+
+
+
+
+ClassRoom:
+Steps to setup the page object Model:
+Create four different package
+1.base
+2.pages or (Screens)
+3.testcase
+4.util---excel data
+2.Create java class for each page
+3.Create method for each action and verification in each page.
+4.Create ProjectSpecificMethod class for common code for all the testcase
+5.Extends baseclass(ProjectSpecificMethod) in all java class for pages 
+6.Add return statement for all the method in respective landing page
+7.Create java class for testcase and extends with baseclass(ProjectSpecificMethod)
+ClassRoom:
+1.Add return statement for all the method in respective landing page
+2.Create java class for testcase(package) and extends with baseclass(ProjectSpecificMethod)
+3.create object in the class and call all method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ClassRoom
+Parallel 2 different 
+1.Remove the static keyword 
+2.Create public constructor in all the pages with driver as a aruguments
+3.pass driver in all constructor call in page and the testcase
