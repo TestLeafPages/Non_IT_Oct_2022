@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="53095" started-at="2022-12-17T18:34:40 IST" finished-at="2022-12-17T18:35:33 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="53095" started-at="2022-12-17T18:34:40 IST" finished-at="2022-12-17T18:35:33 IST">
+      <class name="testcase.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.LoginTest@2e3fc542]" name="setup" is-config="true" duration-ms="0" started-at="2022-12-17T18:34:40 IST" finished-at="2022-12-17T18:34:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcase.LoginTest@2e3fc542]" name="launchBrowser" is-config="true" duration-ms="6951" started-at="2022-12-17T18:34:42 IST" finished-at="2022-12-17T18:34:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="runLogin(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTest@2e3fc542]" name="runLogin" duration-ms="1000" started-at="2022-12-17T18:34:49 IST" data-provider="fetchData" finished-at="2022-12-17T18:34:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[democsr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testcase.LoginTest@2e3fc542]" name="close" is-config="true" duration-ms="291" started-at="2022-12-17T18:34:50 IST" finished-at="2022-12-17T18:34:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcase.LoginTest -->
+      <class name="testcase.CreateLeadTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.CreateLeadTest@782663d3]" name="setup" is-config="true" duration-ms="21" started-at="2022-12-17T18:34:40 IST" finished-at="2022-12-17T18:34:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcase.CreateLeadTest@782663d3]" name="launchBrowser" is-config="true" duration-ms="7006" started-at="2022-12-17T18:34:42 IST" finished-at="2022-12-17T18:34:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="runCreateLead(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.CreateLeadTest@782663d3]" name="runCreateLead" duration-ms="23645" started-at="2022-12-17T18:34:49 IST" data-provider="fetchData" finished-at="2022-12-17T18:35:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[democsr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Testleaf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Princila]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Edward]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreateLead -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testcase.CreateLeadTest@782663d3]" name="close" is-config="true" duration-ms="276" started-at="2022-12-17T18:35:12 IST" finished-at="2022-12-17T18:35:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcase.CreateLeadTest@782663d3]" name="launchBrowser" is-config="true" duration-ms="2362" started-at="2022-12-17T18:35:13 IST" finished-at="2022-12-17T18:35:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="runCreateLead(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.CreateLeadTest@782663d3]" name="runCreateLead" duration-ms="18032" started-at="2022-12-17T18:35:15 IST" data-provider="fetchData" finished-at="2022-12-17T18:35:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[democsr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qeagle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vidya]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Bharathi]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8056]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreateLead -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testcase.CreateLeadTest@782663d3]" name="close" is-config="true" duration-ms="401" started-at="2022-12-17T18:35:33 IST" finished-at="2022-12-17T18:35:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcase.CreateLeadTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
