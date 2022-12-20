@@ -1,0 +1,105 @@
+Exception Handling:
+what is Exception?
+It is an abnormal behaviour which distrub the execution of the program.
+It stops the execution of the program whenever it fails.
+
+types of Failure
+----------------
+Error
+
+Exception
+
+Types of Exception:
+
+1.Checked exception/compile time Exception
+
+2.Unchecked exception/RunTime Exception
+
+What are the Exception are RunTime Exception
+NoSuchElementException
+StaleElementException
+NoAlertPresentException
+ClickInterceptedException
+TimeoutException
+NoSuchWindow
+NoSuchframe
+
+
+How to handle the Exception?
+Two Ways:
+By yourSelf
+you give to someone
+Try catch finally throw throws
+
+Try--keyword---its a block of code
+try alone we cont use
+try{
+}
+catch
+
+try{
+}
+finall
+
+catch:
+block of code to handle the exception
+catch block alone you cont use
+
+finall:
+important code
+It execute wherever the exception handled or not
+throw--class level customize message
+throw is a keyword used to throw an exception
+throws--method level
+throws keyword 
+Extent Report
+------------
+why we need report
+index.html
+Generated report based on html
+Extent Report:
+1.very rich looking report   
+   -----Graphical representationof the summary
+2.we can attach the screenshot of the fail/pass
+3.we can have report based on categories like
+smoke,functional,regression
+4.we can have the report based on author
+5.consolidated dashboard with pie chart
+ 
+dependency
+
+aventStack----version 3.1.5 free version
+
+Integrate Extent Report
+-----------------------
+Steps:
+1.Create startReport() with @BeforeSuite in ProjectSpecificMethod and keep all the common code
+2.Make Extentreports as global variable
+3.Create stopReport()@AfterSuite to have extent.flush()
+4.Create testcaseDetail() with @beforeclass for test case details code
+5.Declare ExtentTest globally
+6.create Global varible testname,testDescription,testAuthor and test Category
+7.Replace hard code values with respective variable name
+8.Assign the value for the variable in the setup()in the testcase
+
+Steps to attach Screenshot:
+---------------------------
+1.Create takeSnap() with selenium code to take the screenshort
+2.Generate random number and append the filename with random number.
+3.Have the return statement with random number
+4.Call the takeSnap() from MediaEntiBuilder statement wtin the filename place to take the snapshort and get the random number
+to append with filename
+
+@BeforeSuite--to start the report
+ @BeforeTest--to excel, Test name,des,aut,cate
+  @BeforeClass---set value for the report
+   @DataProvider
+   @beforemethod
+   @Test
+     
+     // take the screenshot
+		File source = driver.getScreenshotAs(OutputType.FILE);
+		// Creating physical file
+		File destination = new File("./snaps/screenshot.png");
+		// Copy source to destination
+		FileUtils.copyFile(source, destination);
